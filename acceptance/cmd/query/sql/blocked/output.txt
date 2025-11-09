@@ -1,0 +1,5 @@
+
+>>> errcode [CLI] query sql --warehouse-id wh-123 --sql create table t(id int)
+Error: blocked by safe-only mode: found DDL/DML keyword CREATE at statement 1 (pos 1:1). Pass --allow-destructive or set cli.allow_destructive_sql=true to override.
+
+Exit code: 1

@@ -1,0 +1,19 @@
+[[Server]]
+Pattern = "POST /api/2.0/sql/statements"
+Response.Body = '''
+{
+  "statement_id": "stmt-1",
+  "status": {"state": "SUCCEEDED"},
+  "manifest": {
+    "schema": {
+      "columns": [
+        {"name": "one", "type_name": "INT", "type_text": "INT"}
+      ]
+    },
+    "truncated": false
+  },
+  "result": {
+    "data_array": [["1"]]
+  }
+}
+'''

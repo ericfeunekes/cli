@@ -1,0 +1,1 @@
+trace $CLI query sql --warehouse-id wh-123 --sql "select 1 as one" --format json
