@@ -1,0 +1,33 @@
+
+=== Writes JSON results to file
+>>> [CLI] query sql --warehouse-id wh-123 --sql SELECT 'a' AS letter, 1 AS num --format json --result-file result.json
+>>> cat result.json
+[
+  {
+    "statement_id": "stmt-2",
+    "manifest": {
+      "schema": {
+        "column_count": 2,
+        "columns": [
+          {
+            "name": "letter"
+          },
+          {
+            "name": "num"
+          }
+        ]
+      },
+      "total_row_count": 2
+    },
+    "rows": [
+      {
+        "letter": "a",
+        "num": "1"
+      },
+      {
+        "letter": "b",
+        "num": "2"
+      }
+    ]
+  }
+]
