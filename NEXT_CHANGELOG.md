@@ -5,6 +5,7 @@
 ### Notable Changes
 
 ### CLI
+* Add `databricks query sql` command for running SQL statements with table/JSON/CSV output and a profile-aware read-only safety gate.
 
 ### Dependency updates
 

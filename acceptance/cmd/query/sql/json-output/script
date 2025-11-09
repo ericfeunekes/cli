@@ -1,0 +1,3 @@
+title "Writes JSON results to file"
+trace $CLI query sql --warehouse-id wh-123 --sql "SELECT 'a' AS letter, 1 AS num" --format json --result-file result.json
+trace cat result.json
