@@ -1,0 +1,4 @@
+
+>>> [CLI] query sql --warehouse-id wh-123 --sql select 'x' as col1, 'y' as col2 --format table
+col1  col2
+x     y

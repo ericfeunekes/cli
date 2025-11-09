@@ -1,0 +1,1 @@
+trace errcode $CLI query sql --warehouse-id wh-123 --sql "create table t(id int)"

@@ -1,0 +1,29 @@
+[[Server]]
+Pattern = "POST /api/2.0/sql/statements"
+Response.Body = '''
+{
+  "statement_id": "stmt-poll",
+  "status": {"state": "RUNNING"}
+}
+'''
+
+[[Server]]
+Pattern = "GET /api/2.0/sql/statements/stmt-poll"
+Response.Body = '''
+{
+  "statement_id": "stmt-poll",
+  "status": {"state": "SUCCEEDED"},
+  "manifest": {
+    "schema": {
+      "columns": [
+        {"name": "col1", "type_name": "STRING", "type_text": "STRING"},
+        {"name": "col2", "type_name": "STRING", "type_text": "STRING"}
+      ]
+    },
+    "truncated": false
+  },
+  "result": {
+    "data_array": [["x", "y"]]
+  }
+}
+'''

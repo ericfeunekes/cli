@@ -6,6 +6,8 @@
 
 ### CLI
 
+* Add `databricks query sql` for running SQL statements with a configurable read-only safety gate. ([#XXXX](https://github.com/databricks/cli/pull/XXXX))
+
 ### Dependency updates
 
 ### Bundles

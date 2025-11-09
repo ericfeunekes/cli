@@ -1,0 +1,29 @@
+
+>>> [CLI] query sql --warehouse-id wh-123 --sql select 1 as one --format json
+{
+  "statement_id": "stmt-1",
+  "manifest": {
+    "schema": {
+      "columns": [
+        {
+          "name": "one",
+          "type_name": "INT",
+          "type_text": "INT"
+        }
+      ]
+    },
+    "truncated": false
+  },
+  "schema": [
+    {
+      "name": "one",
+      "type_name": "INT",
+      "type_text": "INT"
+    }
+  ],
+  "rows": [
+    [
+      "1"
+    ]
+  ]
+}
